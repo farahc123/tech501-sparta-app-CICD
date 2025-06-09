@@ -19,4 +19,6 @@ RUN npm install
 EXPOSE 3000
 
 # Sets the startup command
-CMD ["npm", "start"]
+COPY start.sh .
+RUN chmod +x start.sh
+CMD ["./start.sh"]
