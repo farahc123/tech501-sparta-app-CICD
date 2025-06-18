@@ -7,7 +7,7 @@ LABEL description="Farah's image of the Sparta test app"
 # Sets the default working directory
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY app/package*.json ./
 
 # Copies the application
 COPY app/ .  
